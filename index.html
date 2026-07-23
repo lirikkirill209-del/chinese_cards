@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Китайские карточки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Китайские карточки</h1>
+
+  <!-- Экран выбора колоды -->
+ <div id="deck-screen">
+   <div id="deck-grid"></div>
+ </div>
+
+  <div id="cards-screen" style="display: none;">
+
+   <h2 id="deck-title"></h2>
+
+   <div class="scene">
+     <div id="card">
+       <div class="face face-ru"><span id="word-ru"></span></div>
+       <div class="face face-zh"><span id="word-zh"></span></div>
+       <div class="face face-py"><span id="word-py"></span></div>
+     </div>
+   </div>
+
+   <div class="bottom-controls">
+     <button id="backBtn">← К колодам</button>
+     <div id="nav">
+       <button id="prevBtn">← Назад</button>
+       <span id="counter">1 / 5</span>
+       <button id="nextBtn">Вперёд →</button>
+     </div>
+   </div>
+
+ </div>
+
+  <script src="script.js"></script>
+</body>
